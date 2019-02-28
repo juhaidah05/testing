@@ -1,0 +1,461 @@
+/*!
+ * Child Maltreatment Surveillance System
+ *
+ * Copyright 2012 BPM, MOH
+ * http://bpm.moh.gov.my
+ *
+ * Designed and built with all the love in the world by @2uk3y.
+ */
+/*body {
+    background: url('../img/banner.jpg') top center;
+}*/
+
+body {
+    font-size: 13px;
+}
+
+label, input, button, select, textarea {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+
+/* -------------------HEADER--------------------*/
+
+
+#logo {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    position: relative;
+}
+
+#logo .jata {
+    position: absolute; 
+    top: 15px; 
+    z-index: 1;
+    margin-left: 25px;
+}
+.jata_small {
+    width: 55px;
+    float: left;
+    margin-left: 5px;
+}
+
+#logo .title {
+    margin-left: 167px;
+}
+
+.title_small {
+    width: 295px;
+    float: left;
+    padding-top: 2px;
+    margin-left: 3px;
+}
+
+#logo .bg, .bg_small {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 0;
+}
+.bg_small {
+    width: 246px;
+}
+
+/* -------------------NAVIGATION BAR--------------------*/
+
+.navbar {
+    border-bottom: 4px solid #ff3100;
+}
+
+.navbar .nav > li > a {
+    color: #ff3100;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #000000;
+  text-decoration: none;
+  /*box-shadow: none;*/
+  /*background: none;*/
+  /*background-color: transparent;*/
+  text-shadow: none;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #fcfcfc, #dadada);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), to(#dadada));
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #dadada);
+  background-image: -o-linear-gradient(top, #fcfcfc, #dadada);
+  background-image: linear-gradient(to bottom, #fcfcfc, #dadada);
+  background-repeat: repeat-x;    
+}
+
+.nav-pills > .active > a > [class^="icon-"], 
+.nav-pills > .active > a > [class*=" icon-"], 
+.nav-list > .active > a > [class^="icon-"], 
+.nav-list > .active > a > [class*=" icon-"], 
+.navbar-inverse .nav > .active > a > [class^="icon-"], 
+.navbar-inverse .nav > .active > a > [class*=" icon-"], 
+.dropdown-menu > li > a:hover > [class^="icon-"], 
+.dropdown-menu > li > a:focus > [class^="icon-"], 
+.dropdown-menu > li > a:hover > [class*=" icon-"], 
+.dropdown-menu > li > a:focus > [class*=" icon-"], 
+.dropdown-menu > .active > a > [class^="icon-"], 
+.dropdown-menu > .active > a > [class*=" icon-"], 
+.dropdown-submenu:hover > a > [class^="icon-"], 
+.dropdown-submenu:focus > a > [class^="icon-"], 
+.dropdown-submenu:hover > a > [class*=" icon-"], 
+.dropdown-submenu:focus > a > [class*=" icon-"]
+{
+  background-image: url("../img/glyphicons-halflings.png");
+}
+
+/*.nav-collapse {
+    left: -165px;
+    top: -35px;
+}*/
+
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+    color: #FF3100;
+}
+
+.nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover
+{
+  background-color: #DADADA;
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a
+{
+    background: none repeat scroll 0 0 #DADADA;
+    text-decoration: none;
+    color: #000000;
+}
+
+.dropdown-menu > .dropdown-submenu > .dropdown-menu {
+  display: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #DADADA;
+    /*color: #000000;*/
+}
+
+.navbar .container {
+    padding-left: 150px;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: #000000;
+}
+
+.dropdown-menu .active > a, .dropdown-menu .active > a:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #000000;
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid #000000;
+  content: "";
+  margin-left: 10px;
+}
+/* -------------------FOOTER--------------------*/
+
+#footer {
+    border-top: 1px solid #ff3100;
+}
+
+
+#slogo {
+    padding-bottom: 20px;
+    text-align: right;
+    
+}
+
+#slogo img {
+  width: 65px; 
+}
+
+/* -------------------CONTAINER--------------------*/
+
+#content {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.page-header {
+    border-bottom: 1px solid #DADADA;
+    margin: 10px 0 10px;
+    padding-bottom: 0px;
+}
+
+label.error {
+    font-size: 11px;
+    margin-bottom: 0px;
+    line-height: 1em;
+    font-style: italic;
+    font-weight: normal;
+    width: auto;
+    display: inline-block;
+}
+
+label.valid {
+    background-image: none;
+    display: inline-block;
+    height: 0px;
+    text-indent: -9999px;
+    width: 0;
+}
+
+.control-group.error .help-inline {
+    display: block;
+}
+
+a, a:hover {
+    color: #000000;
+}
+
+.checkbox.inline {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 200px;
+}
+
+.checkbox.inline + .checkbox.inline {
+    margin-left: 0px;
+}
+
+.subcontrols {
+    padding-left: 17px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    background-color:#EEEEEE;
+    margin-left: 17px;
+    width: 90%;
+    /*padding-left: 0px;*/
+}
+
+.subsubcontrols{
+    padding-left: 17px;    
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  font-size: 13px;
+}
+
+input[type="checkbox"].rptchkbox, input[type="radio"].rptchkbox {
+    vertical-align: top;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 0px;
+    float: left;
+    height: 23px;
+}
+
+.inline-chkboxOradio{
+    display:inline-block; 
+    vertical-align:top; 
+    height:100%;
+    margin-top: 5px;
+}
+/*input[readonly], select[readonly], textarea[readonly] {
+    background-color: transparent;
+    cursor: not-allowed;
+}*/
+
+.form-horizontal .control-label {
+    padding-top: 5px;
+    width: 180px;
+}
+.form-horizontal .controls {
+    margin-left: 200px;
+    padding: 5px 0;
+}
+
+.form-horizontal .rptcustom {
+    width: 380px;
+    text-align: left;
+}
+/* -------------------MODAL--------------------*/
+.modal {
+    margin: -250px 0 0 -340px;
+    width: 680px;
+}
+
+/* -------------------BUTTONS--------------------*/
+.btn-orange:focus,.btn-orange {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #ff3100;
+  background-image: -moz-linear-gradient(top, #ff8373, #ff3100);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ff8373), to(#ff3100));
+  background-image: -webkit-linear-gradient(top, #ff8373, #ff3100);
+  background-image: -o-linear-gradient(top, #ff8373, #ff3100);
+  background-image: linear-gradient(to bottom, #ff8e73, #ff3100);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff3100', endColorstr='#ffff3100', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #51a351;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn-orange:focus,
+.btn-orange:hover,
+.btn-orange:active,
+.btn-orange.active,
+.btn-orange.disabled,
+.btn-orange[disabled] {
+  color: #ffffff;
+  background-color: #ff3100;
+  *background-color: #ff3100;
+}
+.btn-orange:active,
+.btn-orange.active {
+  background-color: #ff3100 \9;
+}
+
+/* -------------------TABLE--------------------*/
+/*.table th
+{
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #fcfcfc, #dadada);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), to(#dadada));
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #dadada);
+  background-image: -o-linear-gradient(top, #fcfcfc, #dadada);
+  background-image: linear-gradient(to bottom, #fcfcfc, #dadada);
+  background-repeat: repeat-x; 
+}*/
+
+.table .text-center {
+  text-align: center;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #EEEEEE;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th
+{
+  background-color: #FEFFB9;
+}
+
+.table .headerSortUp {
+    background: url("../images/sort_asc.png") no-repeat scroll right center transparent;
+}
+.table .headerSortDown {
+    background: url("../images/sort_desc.png") no-repeat scroll right center transparent;
+}
+.table .headerSortBoth {
+    background: url("../images/sort_both.png") no-repeat scroll right center transparent;
+}
+
+table.table thead tr {
+    background-color: #EEEEEE;
+}
+
+div.addbutton {
+    float: right;
+}
+
+.table-bordered th, .table-bordered td {
+    border-left: 1px solid #A4A4A4;
+}
+
+.table-bordered {
+    border-color: #A4A4A4 #A4A4A4 #A4A4A4;
+}
+
+.table th, .table td {
+    border-top: 1px solid #A4A4A4;
+}
+
+
+/* -------------------TAB--------------------*/
+
+
+.nav-tabs > li > a, .nav-tabs > li > a:hover
+{
+    background-color: #eeeeee;
+    border-color: #D8D8D8 #D8D8D8 #A4A4A4;
+/*    cursor: default;*/
+}
+
+
+.nav-tabs {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #A4A4A4;
+}
+.tab-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-color: transparent #A4A4A4 #A4A4A4 ;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: -1px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: #A4A4A4 #A4A4A4 transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #FF3100;
+    cursor: default;
+}
+
+.btn-actions {
+    background-color: #F5F5F5;
+    border-top: 2px solid #E5E5E5;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 19px 20px 50px;
+}
+
+/* -------------------PUSH FOOTER TO BOTTOM--------------------*/
+html, body {
+	height: 100%;
+/*	background-color: #FFFAE8;*/
+}
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -97px;
+}
+#bottom, #push {
+	height: 97px;
+
+}

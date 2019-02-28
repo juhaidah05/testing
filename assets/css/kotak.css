@@ -1,0 +1,65 @@
+.stacked {
+    background: #fffff6;
+    border: 1px solid #bbb;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+    width: 80%;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+            box-shadow: 0 0 3px rgba(0,0,0,.2);
+            
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.stacked:after,
+.stacked:before {
+    background: #fffff6;
+    border: 1px solid #aaa;
+    bottom: -8px;
+    content: '';
+    height: 250px;
+    left: 2px;
+    position: absolute;
+    width: 99%;
+    z-index: -10;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+            box-shadow: 0 0 3px rgba(0,0,0,.2);
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.stacked:before {
+    bottom: -14px;
+    left: 5px;
+    width: 98%;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+            
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.form  {
+  padding: 20px 20px;
+}
+.form .row {
+  margin:0px auto;	
+}
+.myside .row label{
+	width: 40%;
+	float: left;
+}
+.myside .row input{
+	width: 57%;
+}
+.myside .row select{
+	width: 59%;
+}
+.myside .row textarea{
+	width: 57%;
+}
